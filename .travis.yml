@@ -6,7 +6,7 @@ cache:
   directories:
   - $HOME/.m2
 after_success:
-  - mvn clean cobertura:cobertura coveralls:report
+  - mvn clean test jacoco:report coveralls:report
 addons:
     code_climate:
         repo_token: 26bd5c5513da6e5b69ea88875a9b449885e37e0012a1a5637be44c0987c2c806
