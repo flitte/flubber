@@ -36,7 +36,7 @@ import static org.elasticsearch.node.NodeBuilder.nodeBuilder;
  * @author flitte
  * @since 18/06/16.
  */
-public class MockElastic {
+public class Flubber {
 
     private final Node node;
     private final List<String> indexes;
@@ -48,7 +48,7 @@ public class MockElastic {
      * @param directory the data directory
      * @param indexes   a {@link List} of indexes to create
      */
-    public MockElastic(final String directory, final List<String> indexes) {
+    public Flubber(final String directory, final List<String> indexes) {
         this.dataDirectory = UUID.randomUUID()
                                  .toString() + "/" + directory;
         this.indexes = indexes;

@@ -39,21 +39,21 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 /**
- * Simple unit tests for the {@link MockElastic} class.
+ * Simple unit tests for the {@link Flubber} class.
  *
  * @author flitte
  * @since 18/06/16.
  */
-public class MockElasticTest {
+public class FlubberTest {
 
-    private MockElastic server;
+    private Flubber server;
     private final String TEST_INDEX = "test_index";
     private final String TEST_TYPE = "document";
     private final ObjectMapper mapper = new ObjectMapper();
 
     @Before
     public void setup() {
-        server = new MockElastic("data", singletonList(TEST_INDEX));
+        server = new Flubber("data", singletonList(TEST_INDEX));
     }
 
     @After
