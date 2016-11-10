@@ -79,6 +79,7 @@
     </build>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <elastic.version>2.3.3</elastic.version>
     </properties>
 
